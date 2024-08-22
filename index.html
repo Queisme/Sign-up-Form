@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sign-up Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="lefty">
+        <div class="transBox">ODIN</div>
+        <img class="nebula" src="img/ColorWall-d65kwm.png">
+        <img class="odin" src="img/odinlined.png">
+      </div>
+      <div class="righty">
+        <h2>This is not a real online service! Although you probably could use something like this to help you realize your deepest dreams, we all could, but this ain't it. Sign up now anyways. The time to get started is <em>now</em>.</h2>
+        <h2>You <em>know</em> you want to.</h2>
+        <form action="" method="">
+          <fieldset>
+            <legend>Let's do this!</legend>
+            <p>
+              <div class="fillOutBox">
+                <div class="leftSide">
+                  <ul>
+                    <li>
+                      <label for="firstName">FIRST NAME</label>
+                      <input type="text" name="firstName" id="firstName" value="" required placeholder="Thor"/>
+                    </li>
+                    <li>
+                      <label for="email">EMAIL</label>
+                      <input type="email" name="email" id="email" value="" required />
+                      <br>
+                    </li>
+                    <li>
+                      <label for="pwd">PASSWORD</label>
+                      <input type="password" name="pwd" id="pwd" value="" required /><br>
+                      <span id="wrongPass"></span>                      
+                    </li>
+                  </ul>
+                </div>
+                <div class="rightSide">
+                  <ul>
+                    <li>
+                      <label for="lastName">LAST NAME</label>
+                      <input type="text" name="lastName" id="lastName" value="" required placeholder="Odinson"/>
+                    </li>
+                    <li>
+                      <label for="phone">PHONE NUMBER</label>
+                      <input type="tel" name="phone" id="phone" value="" required />
+                    </li>
+                    <li>
+                      <label for="con-pwd">CONFIRM PASSWORD</label>
+                      <input type="password" name="con-pwd" id="con-pwd" value="" required onkeyup="passwordValidation()"/>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+                
+            </p>
+          </fieldset>          
+        </form>   
+        <br>
+                <button id="button" class="button" onclick="wrongPassAlert()">Create Account</button>
+                <br>
+                Already have an account? <a href="https://www.google.com/search?q=how+to+tell+if+a+page+is+real&sca_esv=28b7b435234c270f&sxsrf=ACQVn0_g0YGtIEJFIJ9Io1_KJL3NAbHuXQ%3A1711219908194&ei=xCT_Zbi2C5u1wN4Pj9KS6AE&ved=0ahUKEwi4qIr2houFAxWbGtAFHQ-pBB0Q4dUDCBA&uact=5&oq=how+to+tell+if+a+page+is+real&gs_lp=Egxnd3Mtd2l6LXNlcnAiHWhvdyB0byB0ZWxsIGlmIGEgcGFnZSBpcyByZWFsMgYQABgWGB4yBhAAGBYYHjIIEAAYFhgeGAoyCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgNI-jdQAFjZKHABeAGQAQCYAaABoAH7FaoBBTIwLjEwuAEDyAEA-AEBmAIfoAKYF8ICBBAjGCfCAgoQIxiABBiKBRgnwgILEAAYgAQYigUYkQLCAhEQLhiABBixAxiDARjHARjRA8ICDhAuGIAEGLEDGMcBGNEDwgILEAAYgAQYsQMYgwHCAgUQABiABMICChAAGIAEGIoFGEPCAg0QABiABBiKBRhDGMkDwgILEAAYgAQYigUYkgPCAg4QABiABBiKBRixAxiDAcICBRAuGIAEwgILEAAYgAQYigUYsQPCAggQABiABBixA8ICCxAuGIAEGLEDGNQCwgIIEC4YgAQYsQPCAgYQABgDGArCAgUQIRigAcICBRAhGJ8FmAMAkgcFMjAuMTGgB6SkAg&sclient=gws-wiz-serp">Log in</a>     
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
