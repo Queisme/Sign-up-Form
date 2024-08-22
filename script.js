@@ -22,6 +22,6 @@ function wrongPassAlert() {
   ) {
     alert('Submitted');
   } else {
-    alert('Please fill all fields');
+    alert('Please fill in all fields');
   }
 }
